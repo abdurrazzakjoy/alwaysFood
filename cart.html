@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Your Cart</h2>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+            <!-- <div class="cart-item">
+                <img src="image/chicken.jpg" alt="Delicious Pizza">
+                <div class="item-details">
+                    <h4>Delicious Pizza</h4>
+                    <p>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.</p>
+                    <div class="quantity-section">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <span class="price">$12.99</span>
+                </div>
+                <button class="remove-btn">Remove</button>
+            </div> -->
+            <!-- Add more items as needed -->
+        </div>
+
+        <div class="total-section">
+            <h3>Total: <span id="total-price">$0.00</span></h3>
+            <button class="checkout-btn">Proceed to Checkout</button>
+            <a class="checkout-btn-home" href="index.html">Home</a>
+        </div>
+    </div>
+
+    <script src="src/Data.js"></script>
+    <script src="src/cart.js"></script>
+</body>
+</html>
