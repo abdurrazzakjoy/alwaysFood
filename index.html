@@ -9,8 +9,8 @@
   <body>
     <!-- Wishlist and Cart Buttons at the Top -->
     <div class="top-buttons">
-      <button id="open-wishlist"><a href="wishlist.html">Wishlist</a></button>
-      <button id="open-cart"><a href="cart.html">Cart</a></button>
+      <button id="open-wishlist">Wishlist</button>
+      <button id="open-cart">Cart</button>
     </div>
 
     <!-- Wishlist Modal
@@ -74,5 +74,19 @@
     
     <script src="src/Data.js"></script>
     <script src="src/main.js"></script>
+    <script>
+
+      // The reason to change is when I click on cart and wishlist it doesn't work it works second time or after clicking many times so I write these codes below
+
+      document.getElementById("open-wishlist")
+      .addEventListener('click', function(){
+        window.location.href = "wishlist.html"
+      })
+
+      document.getElementById("open-cart")
+      .addEventListener('click', function(){
+        window.location.href = "cart.html"
+      })
+    </script>
   </body>
 </html>
